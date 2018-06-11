@@ -1,0 +1,15 @@
+<header>
+  <p>
+    <%= link_to "Cancel", action: "index" %>
+  </p>
+</header>
+<h1>Post Editor</h1>
+<%= form_for @post do |f| %>
+  <label>Title:</label><br>
+  <%= f.text_field  :title %><br>
+
+  <label>Content:</label><br>
+  <%= f.text_area :description %><br>
+
+  <%= f.submit "Submit Post" %>
+<% end %>

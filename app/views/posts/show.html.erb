@@ -1,0 +1,9 @@
+<header>
+  <p>
+    <%= link_to "Back", action: "index" %>
+    <%= link_to "Edit", edit_post_path %>
+  </p>
+</header>
+
+<h1><%= @post.title %></h1>
+<p><%= @post.description %></p>

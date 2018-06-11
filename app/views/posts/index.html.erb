@@ -1,0 +1,14 @@
+<header>
+  <p>
+    <%= link_to "Create New Post!", action: "new" %>
+  </p>
+</header>
+<h1>POST LIST</h1>
+<% @posts.each do |post| %>
+  <ul>
+    <li>
+      <a href=<%= post_path(post) %>><%= post.title %></a>
+    </li>
+  </ul>
+
+<% end %>
