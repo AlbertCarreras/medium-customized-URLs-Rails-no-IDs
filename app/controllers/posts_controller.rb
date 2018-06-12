@@ -37,10 +37,10 @@ class PostsController < ApplicationController
     end
   end
 
-  def delete
+  def destroy
     @post = find_by_slug
     @post.destroy
-    redirect_to :index
+    redirect_to :posts
   end
 
   private
